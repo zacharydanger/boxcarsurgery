@@ -1,5 +1,5 @@
 set :application, "boxcarsurgery.com"
-set :repository,  "git@github.com:zacharydanger/boxcarsurgery.git"
+set :repository,  "git://github.com/zacharydanger/boxcarsurgery.git"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
