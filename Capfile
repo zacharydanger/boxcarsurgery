@@ -7,11 +7,11 @@ require 'railsless-deploy'
 load 'config/deploy' # remove this line to skip loading any of the default tasks
 
 task :compass do
-	run "cd #{latest_release} && compass"
+	run "cd #{latest_release} && compass compile -f --boring"
 end
 
 task :jekyll do
 	run "cd #{latest_release} && jekyll"
 end
 
-before "deploy:symlink", :compass, :jekyll
+before "deploy:symlink", :jekyll, :compass
