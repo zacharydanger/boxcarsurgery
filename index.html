@@ -3,4 +3,9 @@ layout: default
 title: boxcarsurgery.com
 ---
 
-foobar
+<strong>blag posts</strong>
+{% for post in site.posts %}
+<div>
+	<a href="{{ post.url }}">{{post.title }}</a> - {{ post.date | date_to_string }}
+</div>
+{% endfor %}
