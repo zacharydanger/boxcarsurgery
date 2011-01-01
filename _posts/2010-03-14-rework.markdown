@@ -1,0 +1,10 @@
+---
+title: "Rework: Agile for Dummies"
+layout: post
+---
+
+Read _Rework_ this week. 37Signals' much hyped second book which I'd pre-ordered off Amazon for a whopping 11$. My tweet from earlier this week sums up my entire review:
+
+> Rework: 1/3rd pictures, 2/3rds re-hashed Agile philosophy w/ less concrete concepts.
+>
+> \- [zacharydanger](http://twitter.com/zacharydanger/status/10337063466)

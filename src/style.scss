@@ -6,6 +6,10 @@ body {
   font-family: Helvetica, sans-serif;
   width: 850px;
 
+  blockquote {
+    font-style: italic
+  }
+
   #header {
 
     #logo {
@@ -43,5 +47,15 @@ body {
     text-align: center;
     border-top: 1px solid $borders;
     margin-top: 4px;
+  }
+}
+
+.post-preview {
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $borders;
+
+  .date-stamp {
+    font-size: 12px;
   }
 }
