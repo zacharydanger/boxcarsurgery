@@ -1,0 +1,34 @@
+@import "_oxymoron.scss";
+
+$borders: #cccccc;
+
+body {
+  font-family: Helvetica, sans-serif;
+  width: 850px;
+  #header {
+    #logo {
+      background-image: url("/images/logo.jpg");
+      background-repeat: no-repeat;
+      width: 850px;
+      height: 334px;
+      margin: 0 auto;
+      font-weight: bold;
+      font-size: 72px;
+      color: white;
+      padding-left: 10px; } }
+  #content-frame {
+    @extend .oxymoron;
+    margin-top: 4px;
+    #content {
+      padding: 3px;
+      padding-left: 0px; }
+    #right-bar {
+      padding: 3px;
+      padding-left: 5px;
+      width: 250px;
+      border-left: 1px solid $borders; } }
+  #footer {
+    font-size: 10px;
+    text-align: center;
+    border-top: 1px solid $borders;
+    margin-top: 4px; } }
