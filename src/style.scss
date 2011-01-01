@@ -5,7 +5,9 @@ $borders: #cccccc;
 body {
   font-family: Helvetica, sans-serif;
   width: 850px;
+
   #header {
+
     #logo {
       background-image: url("/images/logo.jpg");
       background-repeat: no-repeat;
@@ -15,20 +17,32 @@ body {
       font-weight: bold;
       font-size: 72px;
       color: white;
-      padding-left: 10px; } }
+      padding-left: 10px;
+    }
+  }
+
   #content-frame {
     @extend .oxymoron;
     margin-top: 4px;
+
     #content {
       padding: 3px;
-      padding-left: 0px; }
+      padding-left: 0px;
+    }
+
     #right-bar {
       padding: 3px;
       padding-left: 5px;
       width: 250px;
-      border-left: 1px solid $borders; } }
+      border-left: 1px solid $borders;
+      border: 1px solid #0f0;
+    }
+  }
+
   #footer {
     font-size: 10px;
     text-align: center;
     border-top: 1px solid $borders;
-    margin-top: 4px; } }
+    margin-top: 4px;
+  }
+}
