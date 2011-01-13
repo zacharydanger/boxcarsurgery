@@ -35,6 +35,16 @@ body {
 			font-size: 72px;
 			color: white;
 			@include round-corners;
+
+			a {
+				padding-left: 10px;
+				text-decoration: none;
+				color: #fff;
+
+				&:hover {
+					color: #ddd;
+				}
+			}
 		}
 	}
 
