@@ -2,64 +2,89 @@
 
 $borders: #cccccc;
 
+@mixin rounded($radius, $hside, $vside) {
+	border-#{$hside}-#{$vside}-radius: $radius;
+	-moz-border-radius-#{$hside}#{$vside}: $radius;
+	-webkit-border-#{$hside}-#{$vside}-radius: $radius;
+}
+
+@mixin round-corners {
+	@include rounded(15px, top, left);
+	@include rounded(15px, top, right);
+	@include rounded(15px, bottom, left);
+	@include rounded(15px, bottom, right);
+}
+
 body {
-  font-family: Helvetica, sans-serif;
-  width: 850px;
+	font-family: Helvetica, sans-serif;
+	width: 850px;
 
-  blockquote {
-    font-style: italic
-  }
+	blockquote {
+		font-style: italic
+	}
 
-  #header {
+	#header {
 
-    #logo {
-      background-image: url("/images/logo.jpg");
-      background-repeat: no-repeat;
-      width: 850px;
-      height: 334px;
-      margin: 0 auto;
-      font-weight: bold;
-      font-size: 72px;
-      color: white;
-      padding-left: 10px;
-    }
-  }
+		#logo {
+			background-image: url("/images/logo.jpg");
+			background-repeat: no-repeat;
+			width: 850px;
+			height: 334px;
+			margin: 0 auto;
+			font-weight: bold;
+			font-size: 72px;
+			color: white;
+			@include round-corners;
+		}
+	}
 
-  #content-frame {
-    @extend .oxymoron;
-    margin-top: 4px;
+	#content-frame {
+		@extend .oxymoron;
+		margin-top: 10px;
+		padding: 0px;
 
-    #content {
-      padding: 3px;
-      padding-left: 0px;
-    }
+		#content {
+			padding: 3px;
+			padding-left: 0px;
+			padding-right: 15px;
+		}
 
-    #right-bar {
-      padding: 3px;
-      padding-left: 5px;
-      width: 250px;
-      border-left: 1px solid $borders;
-    }
-  }
+		#right-bar {
+			padding-right: 10px;
+			padding-left: 10px;
+			padding-top: 5px;
+			padding-bottom: 10px;
+			width: 250px;
+			background-color: #ddd;
+			margin-left: 50px;
+			@include round-corners;
 
-  #footer {
-    font-size: 10px;
-    text-align: center;
-    border-top: 1px solid $borders;
-    margin-top: 4px;
-  }
+			ul {
+				display: block;
+				margin-top: 2px;
+				padding-top: 0px;
+			}
+		}
+	}
+
+	#footer {
+		font-size: 10px;
+		text-align: center;
+		border-top: 1px solid $borders;
+		margin-top: 4px;
+	}
 }
 
 .post-preview {
-  margin-bottom: 4px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid $borders;
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid $borders;
 
-  .date-stamp {
-    font-size: 12px;
-  }
+	.date-stamp {
+		font-size: 12px;
+	}
 }
 
 .post-date {
-  font-size: 12px;
+	font-size: 12px;
 }
