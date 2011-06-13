@@ -14,4 +14,4 @@ task :jekyll do
 	run "cd #{latest_release} && jekyll"
 end
 
-before "deploy:symlink", :jekyll, :compass
+before "deploy:symlink", :compass, :jekyll
