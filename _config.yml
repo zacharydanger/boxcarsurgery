@@ -1,2 +1,2 @@
 destination: ./public_html
-exclude: config.rb, config, _config.yml, src, Capfile, readme.markdown
+exclude: config.rb, config, _config.yml, src, Capfile, readme.markdown, readme.md
