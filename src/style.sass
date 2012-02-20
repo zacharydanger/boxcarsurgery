@@ -1,6 +1,7 @@
-@import _oxymoron.scss
+@import "bootstrap"
 
 $borders: #cccccc
+$default_font_size: 16px
 
 =rounded($radius, $hside, $vside)
   border-#{$hside}-#{$vside}-radius: $radius
@@ -15,48 +16,25 @@ $borders: #cccccc
 
 body
   font-family: Helvetica, sans-serif
-  width: 850px
+  font-size: $default_font_size
+
+  p
+    font-size: $default_font_size
+
   blockquote
     font-style: italic
     margin-left: 20px
   #header
-    #logo
-      background-image: url("/images/logo.jpg")
-      background-repeat: no-repeat
-      width: 850px
-      height: 334px
-      margin: 0 auto
-      font-weight: bold
-      font-size: 72px
-      color: white
-      +round-corners
-      a
-        padding-left: 10px
-        text-decoration: none
-        color: #fff
-        &:hover
-          color: #ddd
-  #content-frame
-    @extend .oxymoron
     margin-top: 10px
-    padding: 0px
-    #content
-      padding: 3px
-      padding-left: 0px
-      padding-right: 15px
-    #right-bar
-      padding-right: 10px
-      padding-left: 10px
-      padding-top: 5px
-      padding-bottom: 10px
-      width: 250px
-      background-color: #ddd
-      margin-left: 50px
-      +round-corners
-      ul
-        display: block
-        margin-top: 2px
-        padding-top: 0px
+    font-size: 32px
+    padding: 0px 0px 20px 0px
+    text-align: right
+    font-weight: bold
+    a
+      text-decoration: underline
+      color: #000
+      &:hover
+        color: #ddd
   #footer
     font-size: 10px
     text-align: center
@@ -68,7 +46,10 @@ body
   padding-bottom: 4px
   border-bottom: 1px solid $borders
   .date-stamp
-    font-size: 12px
+    font-size: 14px
 
 .post-date
-  font-size: 12px
+  font-size: 14px
+
+.post-body
+  margin-top: 12px
