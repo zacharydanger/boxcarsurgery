@@ -1,55 +1,39 @@
-@import "bootstrap"
+$blueprint-grid-columns: 12
+$blueprint-container-size: 840px
+$blueprint-grid-margin: 10px
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
 
-$borders: #cccccc
-$default_font_size: 16px
-
-=rounded($radius, $hside, $vside)
-  border-#{$hside}-#{$vside}-radius: $radius
-  -moz-border-radius-#{$hside}#{$vside}: $radius
-  -webkit-border-#{$hside}-#{$vside}-radius: $radius
-
-=round-corners
-  +rounded(15px, top, left)
-  +rounded(15px, top, right)
-  +rounded(15px, bottom, left)
-  +rounded(15px, bottom, right)
+@import "blueprint"
+@import "blueprint/reset"
+@import "blueprint/grid"
 
 body
   font-family: Helvetica, sans-serif
-  font-size: $default_font_size
+  font-size: 16px
 
   p
-    font-size: $default_font_size
+    margin: 0px 0px 10px 0px
 
-  blockquote
-    font-style: italic
-    margin-left: 20px
+.container
+  @include container
+
   #header
-    margin-top: 10px
+    @include column(12)
+    @include blueprint-debug('/images/grid.png')
     font-size: 32px
-    padding: 0px 0px 20px 0px
-    text-align: right
     font-weight: bold
-    a
-      text-decoration: underline
-      color: #000
-      &:hover
-        color: #ddd
+    padding: 12px 0px 12px 0px
+
+  #content
+    @include column(8)
+
+  #sidebar
+    @include column(4, true)
+
   #footer
-    font-size: 10px
+    font-size: 12px
     text-align: center
-    border-top: 1px solid $borders
-    margin-top: 4px
-
-.post-preview
-  margin-bottom: 4px
-  padding-bottom: 4px
-  border-bottom: 1px solid $borders
-  .date-stamp
-    font-size: 14px
-
-.post-date
-  font-size: 14px
-
-.post-body
-  margin-top: 12px
+    border-top: 1px solid #ccc
+    margin: 6px 0px 0px 0px
+    padding: 6px 0px 0px 0px
+    @include column(12)
