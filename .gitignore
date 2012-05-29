@@ -1,5 +1,5 @@
 *.swp
-public_html/*
+public/*
 .sass-cache
 _drafts/*
 css/*
