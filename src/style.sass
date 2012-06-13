@@ -1,11 +1,9 @@
-$blueprint-grid-columns: 12
-$blueprint-container-size: 840px
-$blueprint-grid-margin: 10px
-$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
+@import "skeleton/base.sass"
+@import "skeleton/skeleton.sass"
+@import "skeleton/layout.sass"
 
-@import "blueprint"
-@import "blueprint/reset"
-@import "blueprint/grid"
+h1, h2, h3, h4, h5, h6
+  font-family: Helvetica, sans-serif
 
 body
   font-family: Helvetica, sans-serif
@@ -38,41 +36,35 @@ ul
 .post-body
   margin-top: 8px
 
-.container
-  @include container
+#header
+  font-size: 32px
+  font-weight: bold
+  padding: 12px 0px 12px 0px
+  text-align: right
+  border-bottom: 1px solid #ccc
+  margin-bottom: 10px
 
-  #header
-    @include column(12)
-    @include blueprint-debug('/images/grid.png')
-    font-size: 32px
-    font-weight: bold
-    padding: 12px 0px 12px 0px
-    text-align: right
-    border-bottom: 1px solid #ccc
-    margin-bottom: 10px
-
-    a
+  a
+    color: #000
+    &:visited
       color: #000
-      &:visited
-        color: #000
 
-  #content
-    @include column(8)
-
-  #sidebar
-    @include column(4, true)
-
-  #footer
-    font-size: 12px
-    text-align: center
-    border-top: 1px solid #ccc
-    margin: 6px 0px 0px 0px
-    padding: 6px 0px 0px 0px
-    @include column(12)
-
-    p
-      @include column(8)
+#footer
+  font-size: 12px
+  text-align: center
+  border-top: 1px solid #ccc
+  margin: 6px 0px 0px 0px
+  padding: 6px 0px 0px 0px
 
 .post-preview
   .date-stamp
     color: #666
+
+
+@media only screen and (max-width: 767px)
+  #content
+    border-bottom: 1px solid #ccc
+    margin-bottom: 6px
+
+  #sidebar
+    padding-top: 6px
