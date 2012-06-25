@@ -11,11 +11,11 @@ task :bundle_install do
 end
 
 task :compass do
-	run "cd #{latest_release} && bundle exec compass compile -f --boring"
+  run "cd #{latest_release} && bundle exec compass compile --force --boring"
 end
 
 task :jekyll do
-	run "cd #{latest_release} && bundle exec jekyll"
+  run "cd #{latest_release} && bundle exec jekyll"
 end
 
 before "deploy:symlink", :bundle_install, :compass, :jekyll
