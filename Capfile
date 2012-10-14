@@ -18,4 +18,4 @@ task :jekyll do
   run "cd #{latest_release} && bundle exec jekyll"
 end
 
-before "deploy:symlink", :bundle_install, :compass, :jekyll
+before "deploy:create_symlink", :bundle_install, :compass, :jekyll
