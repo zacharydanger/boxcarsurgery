@@ -1,0 +1,11 @@
+---
+layout: link-post
+title: Well that sucks, what else you got?
+link: http://tghw.com/blog/well-that-sucks-what-else-you-got
+---
+
+> My talk with Jason gelled it all together in that single phrase. "Well that sucks, what else you got?"
+
+I've seen (and experienced) this a lot. Otherwise rational people sticking to projects because they can't let go of the sunk costs.
+
+Effort is not fact.
