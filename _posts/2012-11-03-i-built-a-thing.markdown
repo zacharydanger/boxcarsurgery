@@ -32,12 +32,13 @@ After about a year of this living as a single user Sinatra app on Heroku, a frie
 
 So I rebuilt the thing as a multi-user Rails app which you can find at [QuestionsThree.com][q3].
 
-But now I'm not sure how to market the damn thing. Thoughts? Please email me at zacharydangercampbell (at) gmail (dot) com.
+But now I'm not sure how to market the damn thing. Thoughts? Please email me at zacharydangercampbell (at) gmail (dot) com. Comments can also be found over at [Hacker News][hn].
 
 Thank you.
 
 [xkcd]: http://xkcd.com/1129/
 [Q3]: https://questionsthree.com
 [me]: mailto:zacharydangercampbell@gmail.com
+[hn]: http://news.ycombinator.com/item?id=4737683
 
 [^1]: This probably seems pretty insecure, right? Well, so is our facade of an apartment gate. There's nothing to prevent tailgating. :-/
