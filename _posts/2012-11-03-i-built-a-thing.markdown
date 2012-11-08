@@ -13,7 +13,7 @@ The problem is that it has to be a *local phone number* and as illustrated by XK
 
 So what did we do? We bundled phone service with our Time Warner Cable internet for an extra 19.99$/month just to get a local number. After about a year of this, I got tired of paying 20$/month to be harassed by the creditors of whoever previously had our phone number.
 
-So I did what I do. I built [a thing](Q3).
+So I did what I do. I built [a thing][Q3].
 
 The thing in question provides me with a local phone number and makes our apartment gate awesome. When someone calls it:
 
