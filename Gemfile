@@ -6,3 +6,7 @@ gem "jekyll"
 gem "capistrano"
 gem "railsless-deploy"
 gem "compass"
+
+group :development do
+  gem 'foreman'
+end
