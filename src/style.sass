@@ -3,22 +3,24 @@
 @import "skeleton/layout.sass"
 
 h1, h2, h3, h4, h5, h6
-  font-family: Lato, sans-serif
+  font-family: Helvetica Neue, Helvetica, sans-serif
 
 body
-  font-family: Lato, sans-serif
-  font-size: 16px
+  font-family: Helvetica Neue, Helvetica, sans-serif
+  font-size: 18px
+  color: #000
 
   p
-    margin: 0px 0px 10px 0px
+    margin: 0px 0px 14px 0px
+    line-height: 32px
 
 h1
   font-weight: bold
-  font-size: 24px
+  font-size: 32px
   margin: 0px
 
 h2
-  font-size: 18px
+  font-size: 24px
   font-weight: bold
   margin-bottom: 8px
 
@@ -41,24 +43,31 @@ ul
   margin-top: 8px
 
 #header
-  font-size: 32px
+  font-size: 48px
   font-weight: bold
-  padding: 12px 0px 12px 0px
+  padding: 24px 8px 24px 0px
   text-align: right
-  border-bottom: 1px solid #ccc
+  border-bottom: 1px solid #000
   margin-bottom: 10px
 
   a
     color: #000
+    text-decoration: none
+
     &:visited
       color: #000
 
 #footer
   font-size: 12px
   text-align: center
-  border-top: 1px solid #ccc
+  border-top: 1px solid #000
   margin: 6px 0px 0px 0px
   padding: 6px 0px 0px 0px
+
+
+#sidebar
+  ul
+    margin-top: 12px
 
 .post-preview
   .date-stamp
@@ -67,7 +76,7 @@ ul
 
 @media only screen and (max-width: 767px)
   #content
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid #000
     margin-bottom: 6px
 
   #sidebar
