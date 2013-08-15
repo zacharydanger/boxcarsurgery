@@ -2,8 +2,8 @@
 source "http://rubygems.org"
 
 # gem "rails"
-gem "jekyll"
-gem "jekyll-asset-pipeline"
+gem "jekyll", '~> 1.1.0'
+gem "jekyll-asset-pipeline", '~> 0.1.0'
 gem "capistrano"
 gem "railsless-deploy"
 gem "compass"
