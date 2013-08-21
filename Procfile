@@ -1,1 +1,1 @@
-web: jekyll --watch serve 5555
+web: bundle exec jekyll --watch --drafts serve -P 5555
