@@ -1,1 +1,1 @@
-web: bundle exec jekyll --watch --drafts serve -P 5555
+web: bundle exec jekyll serve --port 3006 --watch --drafts
