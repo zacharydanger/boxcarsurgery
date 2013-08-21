@@ -1,1 +1,1 @@
-web: jekyll --auto --server 5555
+web: jekyll --watch serve 5555
