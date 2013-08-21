@@ -1,2 +1,2 @@
-destination: ./public
-exclude: config.rb, config, _config.yml, src, Capfile, readme.markdown, readme.md
+destination: _site
+exclude: [config.rb, config, _config.yml, src, Capfile, readme.markdown, readme.md]
