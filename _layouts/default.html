@@ -3,15 +3,18 @@
 <head>
 	<title>{{page.title}}</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width">
 	<meta charset="UTF-8" />
 
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   	<link rel="alternate" type="application/atom+xml" title="ATOM" href="/atom.xml">
 
+	<link rel="stylesheet" type="text/css" href="/css/vendor/foundation.min.css">
         {% css_asset_tag global %}
         - /_assets/style.sass
         {% endcss_asset_tag %}
+
+	<script type="text/javascript" src="/js/vendor/custom.modernizr.js"></script>
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-3555341-8']);
@@ -25,14 +28,16 @@
 	</script>
 </head>
 <body>
-	<div class="container">
-		<div id="header" class="sixteen columns">
+	<div class="row">
+		<div id="header" class="large-12 columns">
                   <a href="/">boxcarsurgery.com</a>
 		</div>
-		<div id="content" class="twelve columns">
+	</div>
+	<div class="row">
+		<div id="content" class="large-8 columns">
 			{{content}}
 		</div>
-		<div id="sidebar" class="four columns">
+		<div id="sidebar" class="large-4 columns">
 			<strong>enemies of enemies</strong>
 			<ul>
 				<li><a href="http://leftnode.com">leftnode</a></li>
@@ -49,7 +54,9 @@
 				<li><a href="https://github.com/dhgamache/Skeleton.git">stack overflow</a></li>
 			</ul>
 		</div>
-		<div id="footer" class="sixteen columns">
+	</div>
+	<div class="row">
+		<div id="footer" class="large-12 columns">
 			<p>
 			&copy; 2011-2013 boxcarsurgery.com |
 			built with <a href="https://github.com/mojombo/jekyll">jekyll</a> and <a href="http://compass-style.org">compass</a> |
