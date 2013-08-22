@@ -4,7 +4,11 @@ layout: default
 
 <h1>{{page.title}}</h1>
 
-<div class="post-date">posted [ {{ page.date | date: "%Y/%m/%d" }} ]</div>
+<div class="row">
+	<div class="post-date large-12 columns">
+		posted {{ page.date | date: "%Y/%m/%d" }}
+	</div>
+</div>
 
 <div class="post-body">
   {{ content }}
