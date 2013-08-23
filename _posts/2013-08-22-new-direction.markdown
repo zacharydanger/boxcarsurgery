@@ -10,9 +10,3 @@ I've transitioned the CSS framework from [Skeleton](http://www.getskeleton.com) 
 This allows me to separate the publishing task from the version control task. i.e. Write post > commit post > re-deploy site. Now I can write and simply `rake publish` to have the latest content live. Which will be a big help since worrying about committing changes has been a barrier to just sitting down and writing.
 
 You'll still be able to find the [source code for this site on Github](https://github.com/zacharydanger/boxcarsurgery/), it just might not be as up to date.
-
-{% highlight ruby linenos %}
-def foobar
-  puts "WTF"
-end
-{% endhighlight %}
