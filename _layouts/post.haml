@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+%h1= "{{page.title}}"
+
+.row
+  .post-date.large-12.columns
+    = "posted {{ page.date | date: '%Y/%m/%d' }}"
+
+  .post-body.large-12.columns
+    = "{{ content }}"
