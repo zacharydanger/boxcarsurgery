@@ -1,0 +1,72 @@
+!!! 5
+
+%html
+  %head
+    %title= "{{ page.title }}"
+    %meta{:name => 'viewport', :content => "width=device-width"}
+    %meta{:charset => "UTF-8"}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Lato', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:rel => "alternate", :type => "application/atom+xml", :title => "ATOM", :href => "/atom.xml"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/vendor/foundation.min.css"}
+    = "{% css_asset_tag global %} - /_assets/style.sass {% endcss_asset_tag %}"
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/pygments/default.css"}
+    %script{:type => "text/javascript", :src => "/js/vendor/custom.modernizr.js"}
+    :javascript
+      var foo = 'bar';
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3555341-8']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+  %body
+    .row
+      #header.large-12.columns
+        %a{:href => "/"} boxcarsurgery
+
+    .row
+      #content.large-8.columns
+        {{ content }}
+
+      #sidebar.large-4.columns
+        %strong enemies of enemies
+
+        %ul
+          %li
+            %a{:href => "http://leftnode.com"} leftnode
+
+          %li
+            %a{:href => "http://sinlessvillainy.com"} sinless villainy
+
+        %strong me, elsewhere
+
+        %ul
+          %li
+            %a{:href => "http://github.com/zacharydanger"} github
+          %li
+            %a{:href => "http://twitter.com/zacharydanger/"} twitter
+          %li
+            %a{:href => "http://instagram.com/zacharydanger"} instagram
+          %li
+            %a{:href => "http://facebook.com/zacharydanger/"} facebook
+          %li
+            %a{:href => "http://runkeeper.com/user/zacharydanger"} running like an asshole
+          %li
+            %a{:href => "https://github.com/dhgamache/Skeleton.git"} stack overflow
+
+    .row
+      #footer.large-12.columns
+        :markdown
+          &copy; 2011-2013 boxcarsurgery.com |
+          built with [jekyll](https://github.com/mojombo/jekyll) and
+          [compass](http://compass-style.org) |
+          [dns from dnsimple.com](https://dnsimple.com/r/1463c2d9258133) |
+          [hosted on rackspace cloud](http://www.rackspacecloud.com/3315.html) |
+          [fork this shit](http://github.com/zacharydanger/boxcarsurgery/) |
+          [subscribe](/atom.xml)
+
+        %p= "o_0"
